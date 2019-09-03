@@ -116,6 +116,7 @@ const ChatRoom = ({ url, url: { query: { channel = 'general' } } }) => (
                             { '#' + channel }
                           </Title>
 
+                          <Button icon={ <RefreshIcon /> } onClick={ () => refetch() } />
                         </StyledRoomHeader>
 
                         <Box pad='medium' flex='grow'>
